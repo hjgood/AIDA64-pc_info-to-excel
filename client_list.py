@@ -257,8 +257,7 @@ if __name__ == '__main__':
     except:
         input('-----请先关闭IT客户端清单.xlsx-----')
         sys.exit(1)
-    txtinfo = txtinfo()
-    writeexcel(txtinfo)
+    writeexcel(txtinfo())
     format()
     sumlist = len(listdir())
     input('！！！共计导入 ' + str(sumlist) + ' 台主机信息！！！')

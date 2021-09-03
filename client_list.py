@@ -71,21 +71,8 @@ def txtinfo():  # 抓取文本相关记录内容
         f = open(filename, 'r', encoding='utf8')
         source = f.readlines()
         f.close()
-        hddx = []
-        time = ''
-        sn = ''
-        cpu = ''
-        vga = ''
-        os = ''
-        conut = []
-        info = []
-        mac = ''
-        main = ''
-        mem = ''
-        d3 = ''
-        hdd = ''
-        mac = ''
-        all1 = []
+        hddx,conut,info,all1 = [],[],[],[]
+        time,sn,cpu,vga,os,mac,main,mem,d3,hdd,mac = '','','','','','','','','','',''
         all.append(filen_name)
         for x in source:
             a = x.split()
